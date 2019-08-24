@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="Framework/style.css">
+
+    <style>
+        .bg{
+            background-color: rgb(144, 0, 240);
+        }
+    </style>
+
+</head>
+<body>
+<div class="container">
+
+<!--sidebar Section------------------------->
+<div class="sidebar">
+<div class="icosection">
+<div class="icoitems">
+<img src="assets/CleverBaby.png" alt="Oops!">
+<h3 class="mar10">My Application</h3>
+<p class="mar5">example@mail.com</p>
+</div>
+</div>
+
+<!--List Section------------------------->
+<div class="listsection">
+
+<!--list Item Section-->
+<div class="listitems">
+<span class="liico">
+<img src="assets/menu.svg">
+</span>
+<span class="lititle" onclick="goUrl('facebook.com')">More Apps</span>
+</div>
+<!--list Item Section-->
+
+</div>
+</div>
+<div class="sidebarbg"></div>
+
+<!--Header Section-------------------------->
+<div class="header">
+<div class="headerBody">
+<div class="menu">
+<button class="menuButton bg">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><circle cx="7.2" cy="14.4" r="3.2"/><circle cx="14.8" cy="18" r="2"/><circle cx="15.2" cy="8.8" r="4.8"/></svg>
+</button>
+</div> 
+<label class="title">MainActivity</label>
+</div>
+</div>
+    
+<!--Post Box Section---------------------------------------------------------------------------------------------------->
+<div class="box">
+
+                <!--Item Section------------------------------------------->
+                <div class="rebox" onclick="goTo('MainActivity1.html')">
+                    <div class="img">
+                        <img src="assets/post.svg" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="txt1">Main Title</div>
+                        <div class="txt2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                </div>
+                <!--Item End Section--------------------------------------->
+
+                <!--Item Section------------------------------------------->
+                <div class="rebox" onclick="goTo('MainActivity1.html')">
+                    <div class="img">
+                        <img src="assets/post.svg" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="txt1">Main Title</div>
+                        <div class="txt2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                </div>
+                <!--Item End Section---------------------------------------->
+
+                <!--Item Section------------------------------------------->
+                <div class="rebox" onclick="goTo('MainActivity1.html')">
+                    <div class="img">
+                        <img src="assets/post.svg" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="txt1">Main Title</div>
+                        <div class="txt2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                </div>
+                <!--Item End Section---------------------------------------->
+
+</div>
+</div>
+
+<!--End container-->
+</div>
+
+<!--Script Section-->
+<script src="app.js"></script>
+<script>
+    var menu = document.querySelector(".menu");
+    var sidebar = document.querySelector(".sidebar");
+    var sidebarbg = document.querySelector(".sidebarbg");
+
+    menu.addEventListener('click', function(){
+        sidebarbg.style.display = "block";
+        sidebar.style.left = "0px";
+    });
+    sidebarbg.addEventListener('click', function(){
+        sidebarbg.style.display = "none";
+        sidebar.style.left = "-270px";
+    });
+
+function goUrl(url){
+    location.href = "http://" + url;
+}
+
+function goTo(url){
+    location.href = url;
+}
+
+</script>
+</body>
+</html>

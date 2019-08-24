@@ -1,0 +1,257 @@
+body{
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+    background-color: rgb(247, 247, 247);
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    animation-name: fadein;
+    animation-duration: 500ms
+}
+@keyframes fadein{
+    0%{opacity: 0;}
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+p,h1,h2,h3,h4,h5,h6,a{margin: 0}
+a{text-decoration: none; color: #000;}
+i{cursor: pointer}
+
+.container{
+    display: flex;
+}
+
+/*Splash Screen*/
+#splash{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #fff;
+}
+
+.splashBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    animation-name: goup;
+    animation-duration: 1500ms;
+}
+@keyframes goup{
+    0%{opacity: 0}
+}
+.splashBox img{
+    width:200px;
+    height:200px;
+}
+.splashBox p{
+    font-family: 'Heebo', sans-serif;
+    margin-top: 20px;
+    color:rgb(37, 37, 37);
+    font-size: 20px;
+}
+
+.sidebarbg{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, .3);
+    display: none;
+}
+.sidebar{
+    width: 270px;
+    position: fixed;
+    z-index: 4;
+    left: -270px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: 0px 0px 2px .1px rgb(129, 129, 129);
+    transition: .3s;
+    overflow: hidden;
+}
+.icosection{
+    width: 100%;
+    min-height: 200px;
+    max-height: 300px;
+    background-image: linear-gradient(-90deg, #9800b6, #0062b8);
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.icosection img{
+    width: 80px;
+    height: 80px;
+}
+.icoitems{
+    margin-left: 15px;
+}
+.mar10{
+    margin-top: 10px; 
+}
+.mar5{
+    margin-top: 5px; 
+}
+.listsection{
+    margin-top: 10px;
+}
+.listitems{
+   padding: 10px 5px 5px 15px;
+   font-size: 17px;
+   display: flex;
+   align-items: center;
+}
+.listitems:hover{
+   background-color: rgb(245, 244, 244);
+}
+.liico img{
+   width: 28px;
+   height: 28px;
+}
+.lititle{
+   margin-left: 10px;
+}
+
+.rebox {
+    display: flex;
+    border: 0px solid;
+    border-radius: 10px;
+    padding: 5px 10px 0px 10px;
+    margin-top: 15px;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px .1px rgb(212, 212, 212);
+}
+
+.rebox img{
+    border: 0px solid;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    
+}
+.rebox .img{
+    display: flex;
+    align-items: center;
+}
+.rebox .text{
+    margin-left: 20px;
+}
+.rebox .text .txt1{
+    font-size: 20px;
+    word-break: break-all;
+    font-weight: bold;
+    color: rgb(63, 63, 63);
+    padding-right: 15px;
+}
+.rebox .text .txt2{
+    color: gray; 
+    word-break: break-all; 
+    margin-top: 5px; 
+    word-spacing: 2px;
+    padding-right: 15px;
+}
+
+.box{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.header{
+  background-color: rgb(144, 0, 240);
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #000;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 1px 3px .1px rgba(0,0,0,.4);
+  font-size: 20px;
+  color: #fff;
+}
+.headerBody{
+  width: 92%;
+  margin: 0 auto;
+  display: flex;
+}
+.headerOther{
+    background-color: rgb(144, 0, 240);
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 1px 3px .1px rgba(0,0,0,.4);
+    font-size: 20px;
+    color: #fff;
+}
+.headerBodyOther{
+    width: 93%;
+    margin: 0 auto;
+    display: flex;
+}
+.headerBodyOther .title{
+    position: fixed;
+}
+.title2{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-left: 5px; 
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.menu:active{
+    background-color: #fff;
+}
+.menuButton{
+    height: 100%;
+    border: 0px solid;
+    background-color: none;
+    outline: none;
+}
+.menuButton svg{
+    fill: #fff;
+}
+
+.imageview img{
+    width: 100%;
+    height: 220px;
+}
+.image{
+    width: 100%;
+    height: 220px;
+    margin: 10px 0px 5px 0px;
+}
+.text{
+    width: 93%;
+    margin: 0 auto;
+    padding-top: 10px; 
+    margin-Bottom: 20px;
+    line-height: 23px;
+}
+.text p{
+    line-height: 23px;
+}
+.post{
+    margin-top: 60px;
+}
